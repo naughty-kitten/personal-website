@@ -27,8 +27,15 @@
                     width: 14px !important;
                 }
                 .black, .grey, .blue, .red {
-                    margin-left: 20px !important;
-                    margin-right: 20px !important;
+                    margin-left: 10px !important;
+                    margin-right: 10px !important;
+                }
+                .slideshow-container {
+                    margin-left: 10px !important;
+                    margin-right: 10px !important;
+                }
+                .back, .forward {
+                    padding: 14px !important;
                 }
             }
             body {
@@ -90,7 +97,7 @@
                 text-align: center;
                 cursor: pointer;
                 border-radius: 40px;
-                font-size: 20px;
+                font-size: 32px;
                 border: 2px solid#ffffff;
                 opacity: 0.75;
                 transition: 0.2s ease-out;
@@ -118,23 +125,20 @@
                 top: 48%;
                 width: auto;
                 margin-top: -23px;
-                padding: 10px;
+                padding: 20px;
                 font-weight: 700;
                 font-size: 19px;
                 transition: .4s;
-                user-select: none
-            }
-            .forward {
+                user-select: none;
+                border-radius: 10px;
                 border: 2px solid rgba(0, 200, 0, .5);
                 color: #fff;
+            }
+            .forward {
                 right: 20px;
-                border-radius: 10px
             }
             .back {
-                border-radius: 10px;
                 left: 20px;
-                color: #fff;
-                border: 2px solid rgba(0, 200, 0, .5)
             }
             .back:hover, .forward:hover {
                 background-color: rgba(0, 170, 0, .75)
