@@ -13,6 +13,7 @@
                 color-scheme: dark;
                 text-align: center;
                 word-wrap: break-word;
+                user-select: none;
             }
             @font-face {
                 font-family: 'Kanit';
@@ -59,6 +60,7 @@
                 margin-right: 80px;
                 margin-top: 5px;
                 margin-bottom: 5px;
+                user-select: text;
             }
             .grey {
                 background-color: #444444;
@@ -70,6 +72,7 @@
                 margin-right: 80px;
                 margin-top: 5px;
                 margin-bottom: 5px;
+                user-select: text;
             }
             .blue {
                 background-color: #3070ff;
@@ -81,6 +84,7 @@
                 margin-right: 80px;
                 margin-top: 5px;
                 margin-bottom: 5px;
+                user-select: text;
             }
             .red {
                 background-color: #ff4400;
@@ -92,6 +96,7 @@
                 margin-right: 80px;
                 margin-top: 5px;
                 margin-bottom: 5px;
+                user-select: text;
             }
             button {
                 text-align: center;
@@ -113,7 +118,8 @@
             .slideshow-container {
                 position: relative;
                 margin-left: 80px;
-                margin-right: 80px
+                margin-right: 80px;
+                cursor: zoom-in;
             }
             .Containers {
                 display: none;
@@ -152,7 +158,7 @@
                 opacity: .3;
                 border-radius: 4px;
                 display: inline-block;
-                transition: background-color .5s
+                transition: background-color .5s;
             }
             .dots:hover, .enable {
                 background-color: #0a0;
@@ -194,94 +200,94 @@
         </noscript>
         <div class="slideshow-container fade">
             <div class="Containers">
-                <img src="./1.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./1.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./2.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./2.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./3.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./3.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./4.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./4.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./5.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./5.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./6.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./6.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./7.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./7.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./8.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./8.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./9.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./9.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./10.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./10.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./11.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./11.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./12.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./12.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./13.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./13.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./14.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./14.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./15.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./15.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./16.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./16.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./17.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./17.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./18.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./18.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./19.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./19.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./20.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./20.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./21.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./21.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./22.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./22.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./23.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./23.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./24.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./24.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./25.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./25.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./26.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./26.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./27.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./27.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./28.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./28.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./29.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./29.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <div class="Containers">
-                <img src="./30.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" />
+                <img src="./30.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <a class="back" onclick="plusSlides(-1)" title="Előző kép">&#10094;</a>
             <a class="forward" onclick="plusSlides(1)" title="Következő kép">&#10095;</a>
@@ -327,6 +333,12 @@
             function copyText(text) {
                 navigator.clipboard.writeText(text);
             }
+            
+            function openNewTab(imageElement) {
+                var imageUrl = imageElement.src;
+                window.open(imageUrl, '_blank');
+            }
+            
             var slidePosition = 1;
             SlideShow(slidePosition);
 
