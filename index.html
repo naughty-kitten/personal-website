@@ -19,8 +19,8 @@
                 font-family: 'Kanit';
                 src: url('./Kanit-ExtraLight.ttf') format('truetype');
             }
-            @media only screen and (max-width: 1200px) {
-                button {
+            @media only screen and (max-width: 1320px) {
+                button, a {
                     font-size: 16px !important;
                 }
                 .dots {
@@ -98,7 +98,7 @@
                 margin-bottom: 5px;
                 user-select: text;
             }
-            button {
+            button, a {
                 text-align: center;
                 cursor: pointer;
                 border-radius: 40px;
@@ -107,7 +107,7 @@
                 opacity: 0.75;
                 transition: 0.2s ease-out;
             }
-            button:hover {
+            button:hover, a:hover {
                 box-shadow: 0 0 6px 2px#ffffff;
                 opacity: 1;
                 transition: 0.2s ease-in;
@@ -329,6 +329,7 @@
         <p class="grey">Elérhetőségek</p>
         <button class="blue" onclick="copyText('+36702469023')" title="Kattints a másoláshoz.">+36 70 246 9023</button>
         <button class="blue" onclick="copyText('fabianzoltan1981@gmail.com')" title="Kattints a másoláshoz.">fabianzoltan1981@gmail.com</button>
+        <a class="blue" target="_blank" href="https://www.facebook.com/profile.php?id=61560239815582" style="text-decoration: none; padding: 2px;">Facebook</a>
         <script>
             function copyText(text) {
                 navigator.clipboard.writeText(text);
