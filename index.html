@@ -102,7 +102,7 @@
                 text-align: center;
                 cursor: pointer;
                 border-radius: 40px;
-                font-size: 32px;
+                font-size: 22px;
                 border: 2px solid#ffffff;
                 opacity: 0.75;
                 transition: 0.2s ease-out;
@@ -329,7 +329,14 @@
         <p class="grey">Elérhetőségek</p>
         <button class="blue" onclick="copyText('+36702469023')" title="Kattints a másoláshoz.">+36 70 246 9023</button>
         <button class="blue" onclick="copyText('fabianzoltan1981@gmail.com')" title="Kattints a másoláshoz.">fabianzoltan1981@gmail.com</button>
-        <a class="blue" target="_blank" href="https://www.facebook.com/profile.php?id=61560239815582" style="text-decoration: none; padding: 2px;">Facebook</a>
+        <a class="blue" target="_blank" href="https://www.facebook.com/profile.php?id=61560239815582" title="Kövess a Facebookon" style="text-decoration: none; padding: 0px 8px 0px 8px;">Facebook</a>
+        <h3 class="red">Ajánlatok</h3>
+        <p class="black">
+        <!-- Ajánlatok hiánya esetén = '// Jelenleg nincs semmilyen aktuális ajánlat...' -->
+        <!-- Ajánlatok szakasz kezdődik -->
+            // Jelenleg nincs semmilyen aktuális ajánlat...
+        <!-- Ajánlatok szakasz véget ér -->
+        </p>
         <script>
             function copyText(text) {
                 navigator.clipboard.writeText(text);
