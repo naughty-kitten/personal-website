@@ -20,7 +20,7 @@
                 src: url('./Kanit-ExtraLight.ttf') format('truetype');
             }
             @media only screen and (max-width: 1320px) {
-                button, a {
+                button, a, noscript {
                     font-size: 16px !important;
                 }
                 .dots {
@@ -50,9 +50,7 @@
                 font-size: 18px;
                 margin: 18px;
             }
-            .black {
-                background-color: #000000;
-                color: #acacac;
+            .black, .grey, .blue, .red {
                 border-radius: 10px;
                 font-family: "Kanit";
                 opacity: 0.75;
@@ -61,42 +59,22 @@
                 margin-top: 5px;
                 margin-bottom: 5px;
                 user-select: text;
+            }
+            .black {
+                background-color: #000000;
+                color: #acacac;
             }
             .grey {
                 background-color: #444444;
                 color: #dfdfdf;
-                border-radius: 10px;
-                font-family: "Kanit";
-                opacity: 0.75;
-                margin-left: 80px;
-                margin-right: 80px;
-                margin-top: 5px;
-                margin-bottom: 5px;
-                user-select: text;
             }
             .blue {
                 background-color: #3070ff;
                 color: #00ffff;
-                border-radius: 10px;
-                font-family: "Kanit";
-                opacity: 0.75;
-                margin-left: 80px;
-                margin-right: 80px;
-                margin-top: 5px;
-                margin-bottom: 5px;
-                user-select: text;
             }
             .red {
                 background-color: #ff4400;
                 color: #ffff00;
-                border-radius: 10px;
-                font-family: "Kanit";
-                opacity: 0.75;
-                margin-left: 80px;
-                margin-right: 80px;
-                margin-top: 5px;
-                margin-bottom: 5px;
-                user-select: text;
             }
             button, a {
                 text-align: center;
@@ -121,7 +99,7 @@
                 margin-right: 80px;
                 cursor: zoom-in;
             }
-            .Containers {
+            .containers {
                 display: none;
                 border-radius: 10px
             }
@@ -191,102 +169,110 @@
     <body>
         <h1 class="red">Fábián Zoltán egyéni vállalkozó</h1>
         <h3 class="blue">Kínálat</h3>
-        <p class="black">Lakásfelújítás <br>Kőműves munkák <br>Burkolás <br>Hőszigetelés <br>Térkövezés <br>Laminált padló lerakás <br>Támfalak, kerítések építése </p>
+        <p class="black">Lakásfelújítás<br>Kőműves munkák<br>Burkolás<br>Hőszigetelés<br>Térkövezés<br>Laminált padló lerakás<br>Támfalak, kerítések építése</p>
         <h3 class="blue">Részletek</h3>
-        <p class="black">Gyors, precíz munkát végzünk elérhető áron. <br>Több, mint 20 éves tapasztalattal dolgozunk. </p>
+        <p class="black">Gyors, precíz munkát végzünk elérhető áron.<br>Több, mint 20 éves tapasztalattal dolgozunk.</p>
         <p class="grey">Képek</p>
         <noscript>
-            <p class="red">A weboldal megfelelő működéséhez a <b>JavaScript</b> engedélyezése szükséges.</p>
+            <p class="red">
+                <span style="font-size: 32px;">A weboldal megfelelő működéséhez a <b>JavaScript</b> engedélyezése szükséges, ami neked le van tiltva; ellenőrizd a böngésződ beállításaiban.</span>
+                <br><br>
+                <b>Google Chrome:</b> Beállítások &gt; Adatvédelem és biztonság &gt; Webhelybeállítások &gt; JavaScript &gt; A webhelyek használhatnak Javascriptet<br>Vagy írd be ezt a linket: <u>chrome://settings/content/javascript</u> &gt; A webhelyek használhatnak Javascriptet 
+                <br><br>
+                <b>Mozilla Firefox:</b> Írd be ezt a linket: <u>about:config</u> &gt; írd be: <u>javascript.enabled</u> és állítsd <u>true</u> értékre
+                <br><br>
+                <b>Microsoft Edge:</b> Beállítások &gt; Sütik és webhely engedélyek &gt; JavaScript &gt; Engedélyezett<br>Vagy írd be ezt a linket: <u>edge://settings/content/javascript</u> &gt; Engedélyezett
+            </p>
         </noscript>
         <div class="slideshow-container fade">
-            <div class="Containers">
+            <div class="containers">
                 <img src="./1.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./2.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./3.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./4.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./5.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./6.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./7.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./8.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./9.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./10.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./11.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./12.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./13.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./14.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./15.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./16.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./17.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./18.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./19.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./20.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./21.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./22.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./23.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./24.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./25.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./26.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./27.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./28.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./29.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
-            <div class="Containers">
+            <div class="containers">
                 <img src="./30.jpg" style="width:100%;border-radius:10px;box-shadow:0 0 4px 2px#000000;margin-top:5px;" alt="referenciakép" onclick="openNewTab(this)" />
             </div>
             <a class="back" onclick="plusSlides(-1)" title="Előző kép">&#10094;</a>
@@ -360,7 +346,7 @@
 
             function SlideShow(n) {
                 var i;
-                var slides = document.getElementsByClassName("Containers");
+                var slides = document.getElementsByClassName("containers");
                 var circles = document.getElementsByClassName("dots");
                 if (n > slides.length) {
                     slidePosition = 1
