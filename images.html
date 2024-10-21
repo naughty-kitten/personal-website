@@ -36,7 +36,7 @@
                 background-size: contain;
                 background-position: center;
             }
-            a {
+            .black {
                 background-color: #000000;
                 color: #acacac;
                 border-radius: 10px;
@@ -55,6 +55,11 @@
                 font-size: 22px;
                 border: 2px solid#ffffff;
                 transition: 0.2s ease-out;
+            }
+            .black#top {
+                position: relative;
+                margin: auto;
+                opacity: 0.8;
             }
             a:hover {
                 box-shadow: 0 0 6px 2px#ffffff;
@@ -83,6 +88,7 @@
         </style>
     </head>
     <body>
+        <h1 class="black" id="top">Képek</h1>
         <div class="container">
             <img class="content" onclick="openNewTab(this)" src="./1.jpg" alt="kicsi referenciakép">
             <img class="content" onclick="openNewTab(this)" src="./2.jpg" alt="kicsi referenciakép">
