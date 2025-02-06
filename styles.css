@@ -1,0 +1,257 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('./Kanit-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Oxanium';
+    src: url('./Oxanium-ExtraBold.ttf') format('truetype');
+}
+
+:root {
+    color-scheme: only dark;
+    scroll-behavior: smooth;
+    scroll-padding-top: 190px;
+    scrollbar-width: thin;
+    scrollbar-color: #fa0 rgba(0, 0, 0, 0.5);
+}
+
+* {
+    font-size: 14px;
+    font-family: 'Kanit', Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: auto;
+    background-color: #444;
+    background-image: url("images/22.webp");
+    color: white;
+    min-width: 300px;
+    backdrop-filter: grayscale(1) contrast(0.4) sepia(0.15) blur(16px);
+    min-height: 100vh;
+}
+
+
+p#carousel-indicator {
+    width: 80px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    padding-top: 6px;
+    padding-bottom: 7px;
+    margin: 0px 2px;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    text-align: center;
+    padding: 10px;
+    min-height: 60px;
+    border-bottom: 2px solid #08f;
+    background-color: rgba(0, 120, 180, 0.3);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+}
+
+nav {
+    margin: 10px;
+    text-align: center;
+}
+
+section {
+    border: 1px solid #08f;
+    background-color: rgba(68, 68, 68, 0.5);
+    backdrop-filter: blur(5px);
+    margin: auto;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width: 600px;
+    padding-bottom: 20px;
+}
+
+section > p {
+    margin: 10px;
+}
+
+h2,
+h3 {
+    background-color: #08f;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0px;
+    margin-top: -45px;
+    color: #ffd;
+}
+
+h2 {
+    margin-top: 0px;
+    font-size: 36px;
+    padding: 12px;
+}
+
+h3 {
+    font-size: 20px;
+    padding: 6px;
+}
+
+button,
+a {
+    background-color: rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    color: #fa0;
+    border: none;
+    border-radius: 12px;
+    font-size: 12px;
+    padding: 8px;
+    padding-left: 50px;
+    padding-right: 50px;
+    transition: 0.25s;
+}
+
+button:hover,
+a:hover {
+    background-color: #fa0;
+    color: black;
+}
+
+a.fixed-width {
+    display: inline-block;
+    margin-bottom: 5px;
+    width: 160px;
+}
+
+div#image-carousel {
+    max-width: 450px;
+    width: 90%;
+    aspect-ratio: 0.75;
+    border: 1px solid #08f;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+div#carousel-controller {
+    display: inline-table;
+    position: fixed;
+    margin: auto;
+    bottom: 100px;
+    text-align: center;
+    left: 0px;
+    width: 100%;
+}
+
+div#carousel-controller > * {
+    display: inline-block;
+}
+
+img:not(#logo) {
+    max-width: 450px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+}
+
+img#logo {
+    height: 110px;
+    margin-right: 20px;
+    display: inline;
+}
+
+div.error {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 117, 0, 0.5);
+}
+
+section > ul {
+    text-align: left;
+    margin-left: 0px;
+}
+
+section > p {
+    text-align: left;
+    margin-left: 30px;
+}
+
+div.error > p {
+    position: relative;
+    top: 125px;
+}
+
+img.warning-sign {
+    width: 60px;
+    top: 20%;
+    position: relative;
+    top: 130px;
+}
+
+video {
+    max-width: 450px;
+    border: 1px solid #08f;
+    width: 90%;
+}
+
+/* If screen width is smaller than 610px */
+@media only screen and (max-width: 610px) {
+    img#logo {
+        height: 70px;
+        margin-bottom: 0px;
+    }
+    h1 {
+        font-size: 30px;
+        margin-top: -30px;
+        margin-left: 10px;
+    }
+    section {
+        margin: 5px;
+    }
+    nav {
+        line-height: 38px;
+    }
+}
+
+/* If screen width is smaller than 844px */
+@media only screen and (max-width: 844px) {
+    nav > a {
+        padding: 8px;
+    }
+}
+
+/* If screen width is smaller than 400px */
+@media only screen and (max-width: 400px) {
+    p#carousel-indicator {
+        width: 50px;
+    }
+    div#carousel-controller > button {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+/* If screen width is smaller than 345px */
+@media only screen and (max-width: 345px) {
+    section > p {
+        margin-left: 10px;
+    }
+    section > ul {
+        margin-left: -15px;
+    }
+        
+    
+}
+
+/* Disable all transition effects based on user preferences */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
