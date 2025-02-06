@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./icon.png" type="icon/png">
+    <script src="image-carousel.js"></script>
+    <title>Fábián Zoltán E.V. - Főoldal</title>
+</head>
+<body>
+    <header>
+        <img src="logo.svg" alt="Oldal logója" id="logo">
+        <h1>Főoldal</h1>
+        <nav>
+            <a href="#offers">Kínálatunk</a>
+            <a href="#motto">Mottónk</a>
+            <a href="#images">Képek</a>
+            <a href="#videos">Videók</a>
+            <a href="#contact">Elérhetőségek</a>
+        </nav>
+    </header>
+    <main>
+        <section id="offers">
+            <h2>Kínálatunk</h2>
+            <ul>
+                <li>Lakásfelújítás</li>
+                <li>Kőműves munkák</li>
+                <li>Burkolás</li>
+                <li>Hőszigetelés</li>
+                <li>Térkövezés</li>
+                <li>Laminált padló lerakás</li>
+                <li>Támfalak, kerítések építése</li>
+            </ul>
+        </section>
+        <section id="motto">
+            <h2>Mottónk</h2>
+            <p>Gyors, precíz munkát végzünk elérhető áron.<br>Több, mint 20 éves tapasztalattal dolgozunk.</p>
+        </section>
+        <section id="images">
+            <h2>Képek</h2>
+            <div id="image-carousel">
+                <!-- Images will be auto-generated on load -->
+                <div id="carousel-controller">
+                    <button onclick="stepSlide(-1);">&lt;</button>
+                    <p id="carousel-indicator">0/0</p>
+                    <button onclick="stepSlide(1);">&gt;</button>
+                </div>
+                <noscript>
+                    <div class="error">
+                        <img src="warning.svg" alt="Felkiáltójel Ikon" class="warning-sign">
+                        <p>Ez a képnézegető nem működik JavaScript nélkül</p>
+                    </div>
+                </noscript>
+            </div>
+            <a href="./images.html" class="fixed-width">Összes kép megjelenítése</a>
+        </section>
+        <section id="videos">
+            <h2>Videók</h2>
+            <p>Még nem töltöttünk fel egy videót sem.</p>
+            <!--video controls src="videos/video.mp4"></video-->
+        </section>
+        <section id="contact">
+            <h2>Elérhetőségek</h2>
+            <a href="mailto:fabianzoltan1981@gmail.com" class="fixed-width">fabianzoltan1981@gmail.com</a>
+            <br>
+            <a href="tel:+36702469023" class="fixed-width">+36&nbsp;70&nbsp;246&nbsp;9023</a>
+            <br>
+            <a href="https://www.facebook.com/profile.php?id=61560239815582" target="_blank" class="fixed-width">Facebook profil</a>
+        </section>
+        <!-- This is only because content was smaller than viewport and casued visual problems -->
+        <div>&nbsp;</div>
+    </main>
+    <script>
+        // Initialize the image carousel
+        setupCarousel();
+    </script>
+</body>
+</html>
