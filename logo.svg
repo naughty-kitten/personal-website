@@ -9,7 +9,19 @@
    id="svg1"
    xml:space="preserve"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   xmlns:svg="http://www.w3.org/2000/svg">
+   <style type="text/css" media="screen">  
+    <![CDATA[  
+    @font-face {
+      font-family: 'Oxanium';
+      src: url('./Oxanium-ExtraBold.ttf') format('truetype');
+    }
+    tspan {  
+        font-family: 'Oxanium';
+    }
+    ]]>  
+</style> 
+   <defs
      id="defs1" /><g
      id="layer1"
      transform="translate(-1.6759172,-1.4175954)"><text
