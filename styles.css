@@ -126,7 +126,8 @@ a.fixed-width {
     width: 160px;
 }
 
-div#image-carousel {
+div#image-carousel,
+div#image-container > img {
     max-width: 450px;
     width: 90%;
     aspect-ratio: 0.75;
@@ -187,7 +188,10 @@ div.error > p {
 }
 
 img.warning-sign {
-    width: 60px;
+    width: 60px !important;
+    transform: translateX(-50%);
+    left: 50%;
+    display: inline-block;
     top: 20%;
     position: relative;
     top: 130px;
