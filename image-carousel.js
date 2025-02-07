@@ -10,14 +10,14 @@ async function setupCarousel() {
         const carouselContainer = document.getElementById("image-carousel");
         
         // Throw an error if fetching or parsing fails
-        if (!response.ok) throw new Error("Failed to fetch images");
+        if (!response.ok) {throw new Error("Failed to fetch images");}
         const images = await response.json();
         imgArray = images;
         
         // Iterate through the folder of images
         for (i=1; i < images.length+1; i++) {
             // Add HTML tags to carousel container
-            carouselContainer.innerHTML += `<img src="${images[i-1]}" id="img${i}" style="display:none;">`
+            carouselContainer.innerHTML += `<img src="${images[i-1]}" id="img${i}" style="display:none;">`;
         }
         
         // Hide all images except for the first one
