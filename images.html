@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./icon.png" type="icon/png">
+    <script src="image-loader.js"></script>
+    <title>Fábián Zoltán E.V. - Képek</title>
+</head>
+<body>
+    <header>
+        <img src="logo.svg" alt="Oldal logója" id="logo">
+        <h1>Képek</h1>
+        <nav>
+            <a href="#offers">Vissza a tetejére</a>
+            <a href="./index.html">Vissza a főoldalra</a>
+        </nav>
+    </header>
+    <main>
+        <section id="images">
+            <h2>Képek</h2>
+            <div id="image-container">
+                <!-- Images will be auto-generated on load -->
+                <noscript>
+                    <div class="error">
+                        <img src="warning.svg" alt="Felkiáltójel Ikon" class="warning-sign">
+                        <p>Ez a képnézegető nem működik JavaScript nélkül</p>
+                    </div>
+                </noscript>
+            </div>
+        </section>
+        <!-- This is only because content was smaller than viewport and casued visual problems -->
+        <div>&nbsp;</div>
+    </main>
+    <script>
+        // Initialize the image container
+        loadImages();
+    </script>
+</body>
+</html>
