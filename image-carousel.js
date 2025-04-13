@@ -17,7 +17,7 @@ async function setupCarousel() {
         // Iterate through the folder of images
         for (i=1; i < images.length+1; i++) {
             // Add HTML tags to carousel container
-            carouselContainer.innerHTML += `<img src="${images[i-1]}" id="img${i}" style="display:none;">`;
+            carouselContainer.innerHTML += `<img src="./${images[i-1]}" id="img${i}" style="display:none;">`;
         }
         
         // Hide all images except for the first one

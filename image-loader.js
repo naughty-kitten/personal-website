@@ -13,7 +13,7 @@ async function loadImages() {
         // Iterate through the folder of images
         for (i=1; i < images.length+1; i++) {
             // Add HTML tags to carousel container
-            container.innerHTML += `<img src="${images[i-1]}" id="img${i}">`;
+            container.innerHTML += `<img src="./${images[i-1]}" id="img${i}">`;
         }
         return images;
     // Throw an error if the parsing or fetching fails

@@ -5,11 +5,6 @@
     src: url('./Kanit-ExtraLight.ttf') format('truetype');
 }
 
-@font-face {
-    font-family: 'Oxanium';
-    src: url('./Oxanium-ExtraBold.ttf') format('truetype');
-}
-
 :root {
     color-scheme: only dark;
     scroll-behavior: smooth;
@@ -83,7 +78,7 @@ h3 {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 35px;
     margin: 0px;
     margin-top: -45px;
     color: #ffd;
@@ -102,6 +97,7 @@ h3 {
 
 button,
 a {
+    cursor: pointer;
     background-color: rgba(0, 0, 0, 0.4);
     text-decoration: none;
     color: #fa0;
@@ -138,6 +134,7 @@ div#image-container > img {
 
 div#carousel-controller {
     display: inline-table;
+    user-select: none;
     position: fixed;
     margin: auto;
     bottom: 100px;
@@ -211,7 +208,7 @@ video {
         margin-bottom: 0px;
     }
     h1 {
-        font-size: 30px;
+        font-size: 25px;
         margin-top: -30px;
         margin-left: 10px;
     }
@@ -226,7 +223,14 @@ video {
 /* If screen width is smaller than 844px */
 @media only screen and (max-width: 844px) {
     nav > a {
-        padding: 8px;
+        padding: 8px 32px;
+    }
+}
+
+/* If screen width is smaller than 630px */
+@media only screen and (max-width: 630px) {
+    nav > a {
+        padding: 8px 12px;
     }
 }
 
