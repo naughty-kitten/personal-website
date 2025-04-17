@@ -20,5 +20,11 @@
         </section>
         <div>&nbsp;</div>
     </main>
+    <script>
+        // Fix browsers sometimes skipping applying background filters
+        window.addEventListener("load", () => {
+            requestAnimationFrame(() => { document.body.style.filter += " "; });
+        });
+    </script>
 </body>
 </html>
