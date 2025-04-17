@@ -145,6 +145,7 @@ div#carousel-controller {
 
 div#carousel-controller > * {
     display: inline-block;
+    backdrop-filter: blur(4px);
 }
 
 img:not(#logo) {
