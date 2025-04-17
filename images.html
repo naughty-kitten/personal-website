@@ -36,6 +36,10 @@
     <script>
         // Initialize the image container
         loadImages();
+        // Fix browsers sometimes skipping applying background filters
+        window.addEventListener("load", () => {
+            requestAnimationFrame(() => { document.body.style.filter += " "; });
+        });
     </script>
 </body>
 </html>
