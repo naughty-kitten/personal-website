@@ -21,7 +21,7 @@
 body {
     margin: auto;
     background-color: #444;
-    background-image: url("images/47.webp"); /* This is the default BG image, it may be overriden by JS */
+    background-image: url("./images/MxWD8Wms.webp"); /* This is the default BG image, it may be overriden by JS */
     color: white;
     min-width: 300px;
     backdrop-filter: grayscale(1) contrast(0.4) sepia(0.15) blur(16px);
