@@ -26,7 +26,6 @@ body {
     min-width: 300px;
     backdrop-filter: grayscale(1) contrast(0.4) sepia(0.15) blur(16px);
     min-height: 100vh;
-    will-change: backdrop-filter;
 }
 
 
