@@ -76,7 +76,7 @@
         setupCarousel();
         // Fix browsers sometimes skipping applying background filters
         window.addEventListener("load", () => {
-            requestAnimationFrame(() => { document.body.style.filter += "invert(0.00001)"; });
+            requestAnimationFrame(() => { document.body.style.filter += " invert(0.00001)"; });
         });
     </script>
 </body>
