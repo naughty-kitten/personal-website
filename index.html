@@ -74,9 +74,13 @@
     <script>
         // Initialize the image carousel
         setupCarousel();
-        // Fix browsers sometimes skipping applying background filters
+        // Fix browsers (I'm talking aboout you, Firefox) sometimes skipping applying background filters
         window.addEventListener("load", () => {
-            requestAnimationFrame(() => { document.body.style.backdropFilter = "grayscale(1) contrast(0.4) sepia(0.15) blur(16px) invert(0.00001)"; });
+            setTimeout(() => {
+                requestAnimationFrame(() => {
+                    document.body.style.backdropFilter = "grayscale(1) contrast(0.4) sepia(0.15) blur(16px) invert(0.00001)";
+                });
+            }, 10);
         });
     </script>
 </body>
