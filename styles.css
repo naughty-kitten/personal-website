@@ -5,6 +5,7 @@
     src: url('./Kanit-ExtraLight.ttf') format('truetype');
 }
 
+/* Set dark theme with dark scrollbar and smooth scrolling */
 :root {
     color-scheme: only dark;
     scroll-behavior: smooth;
@@ -24,7 +25,7 @@ body {
     background-image: url("./images/MxWD8Wms.webp"); /* This is the default BG image, it may be overriden by JS */
     color: white;
     min-width: 300px;
-    backdrop-filter: grayscale(1) contrast(0.4) sepia(0.15) blur(16px);
+    backdrop-filter: grayscale(1) contrast(0.4) sepia(0.15) blur(16px); /* BG image filters */
     min-height: 100vh;
     background-repeat-x: no-repeat;
     background-repeat-y: repeat;
@@ -234,6 +235,14 @@ video {
 @media only screen and (max-width: 630px) {
     nav > a {
         padding: 8px 12px;
+    }
+}
+
+/* If screen width is smaller than 420px */
+@media only screen and (max-width: 420px) {
+    nav > a {
+        padding: 8px 8px;
+        font-size: 10px;
     }
 }
 
